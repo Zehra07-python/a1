@@ -1,0 +1,56 @@
+# 97
+n=int(input())
+s=0
+for i in str(n):
+  i=int(i)
+  if i%2==1:
+    s=s+1
+print(s)
+
+# 98
+n=int(input())
+for i in range(1,n//2+1):
+  if n>0:
+   n%i==0
+print(i)
+
+# 99
+n=int(input())
+a=[]
+s=0
+for i in str(n):
+  i=int(i)
+  a.append(min(i))
+  s=s+1
+print(s)
+
+# 100
+n=int(input())
+s=0
+while n>0:
+  n=n//2
+  s=s+1
+print(s)
+
+# 101
+n=int(input())
+s=0
+for i in range(1,6):
+  if n==5:
+     n=1,2*n
+     s=s+n
+print(s)
+
+# 102
+x=int(input())
+n=int(input())
+c=0
+f=1
+k=-1
+for i in range(1,n+1):
+  if x>0 and n>0:
+     k=-1*k
+     f=f*i
+     s=k*(x**i)/f
+     s=s+c
+print(s)
